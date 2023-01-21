@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: hsl(30deg, 38%, 92%);
+}
+body .content {
+  background-color: hsl(0deg, 0%, 100%);
+  margin: auto auto;
+  height: 90%;
+  min-width: 50%;
+  max-width: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+body .content img {
+  height: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .content main {
+  padding: 0 8%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .content main span {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 8px;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 1.2rem;
+  margin-top: 5%;
+}
+body .content main h1 {
+  font-size: 3.5rem;
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  color: hsl(212deg, 21%, 14%);
+}
+body .content main p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  color: hsl(228deg, 12%, 48%);
+}
+body .content main .price {
+  display: flex;
+  align-items: center;
+}
+body .content main .price .current-price {
+  font-family: "Fraunces", sans-serif;
+  font-weight: 700;
+  font-size: 3.4rem;
+  color: hsl(158deg, 36%, 37%);
+}
+body .content main .price .old-price {
+  font-family: "Montserrat", sans-serif;
+  margin-left: 8%;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+  color: hsl(228deg, 12%, 48%);
+}
+body .content main button {
+  background-color: hsl(158deg, 36%, 37%);
+  color: hsl(0deg, 0%, 100%);
+  border-radius: 10px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  min-height: 15%;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+body .content main button svg {
+  margin-right: 2%;
+}
+body .content main button:hover {
+  background-color: hsl(158deg, 36%, 18%);
+  cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+  body .content {
+    flex-direction: row;
+  }
+  body .content img {
+    content: url(../images/image-product-desktop.jpg);
+    height: 100%;
+    max-width: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 10px;
+  }
+}/*# sourceMappingURL=styles.css.map */
